@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 minimum-scale=1"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="index.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Signika+Negative&family=Graduate&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Carlony</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="title" data-extra="siteName">CARLONY</h1>
+      <nav class="sliding-nav nav-hover">
+        <h3 class="categories">Categories</h3>
+        <ul class="nav" id="headerNav">
+          <li class="nav-items">
+            <a href="#" class="hover" data-extra="whatsNew">What's New</a>
+          </li>
+          <li class="nav-items">
+            <a href="#" class="hover" data-extra="bestSellers">Best Sellers</a>
+          </li>
+          <li class="nav-items">
+            <a href="#" class="hover" data-brand="tesla">Tesla</a>
+          </li>
+          <li class="nav-items">
+            <a href="#" class="hover" data-brand="benz">Mercedes-Benz</a>
+          </li>
+          <li class="nav-items">
+            <a href="#" class="hover" data-brand="bmw">BMW</a>
+          </li>
+          <li class="nav-items">
+            <a href="#" class="hover" data-brand="nissan">Nissan</a>
+          </li>
+          <li class="nav-items">
+            <a href="#" class="hover" data-brand="porsche">Porsche</a>
+          </li>
+          <li class="nav-items">
+            <a href="#" class="hover" data-brand="ferrari">Ferrari</a>
+          </li>
+          <li class="nav-items">
+            <a href="#" class="hover" data-brand="audi">Audi</a>
+          </li>
+          <li class="nav-items">
+            <a href="#" class="hover" data-brand="ford">Ford</a>
+          </li>
+          <li class="nav-items">
+            <a href="#" class="hover" data-extra="accessories">Accessories</a>
+          </li>
+          <li class="nav-items">
+            <a href="#" class="hover" data-extra="coupons">Coupons</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="overlay"></div>
+    </header>
+
+    <nav class="menu-popup">
+      <i class="fa-solid fa-bars-staggered menu-icon" id="menu-icon"></i>
+      <div class="menu">
+        <div class="group">
+          <div class="user">
+            <div class="dp">
+              <img width="100px" src="img/dp.jpg" alt="Profile Image" />
+            </div>
+            <p class="username">Agent Null</p>
+          </div>
+          <i class="fa-solid fa-cart-shopping cart" id="cart-icon"></i>
+        </div>
+        <div class="input-container">
+          <input type="text" id="menuSearch" />
+          <i class="fa-solid fa-magnifying-glass search" id="menuSearchBtn"></i>
+        </div>
+        <ul class="lists">
+          <li class="list">
+            <a class="hover reviews-nav" id="reviewsNav" href="#">Reviews</a>
+          </li>
+          <li class="list">
+            <a class="hover logIn-nav logIn-signUp" href="#">Log In</a>
+          </li>
+          <li class="list">
+            <a class="hover faqs-nav" id="faqsNav" href="#">FAQ</a>
+          </li>
+          <li class="list">
+            <a class="hover signUp-nav logIn-signUp" href="#">Sign Up</a>
+          </li>
+          <li class="list">
+            <a class="hover theme" href="#">Dark Mode</a>
+          </li>
+        </ul>
+        <div class="group">
+          <div class="socials">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-github"></i>
+          </div>
+          <select id="" class="countries">
+            <option value="nigeria">Nigeria</option>
+            <option value="ghana">Ghana</option>
+            <option value="south">South africa</option>
+            <option value="kenya">Kenya</option>
+            <option value="egypt">Egypt</option>
+            <option value="uganda">Uganda</option>
+          </select>
+        </div>
+      </div>
+    </nav>
+
+    <section class="intro">
+      <div class="bg">
+        <img src="img/tesla1.webp" alt="intro" />
+        <div class="info">
+          <h2 class="title">TESLA MODEL Y</h2>
+          <button
+            class="purchase btn"
+            data-name="Tesla Model Y"
+            data-price="64000"
+            data-img-src="img/tesla1.webp"
+            data-details="Model Y provides maximum versatility—able to carry 7 passengers and their cargo. Model Y is capable in rain, snow, mud and off-road. Model Y is fully electric, so you never need to visit a gas station again. If you charge overnight at home, you can wake up to a full battery every morning."
+          >
+            Purchase
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="trends">
+      <h2 class="topic">Trending Now In Your Country</h2>
+      <div class="container">
+        <div class="trend" id="trend1">
+          <div class="img-container">
+            <img src="img/nissan.webp" alt="" />
+          </div>
+          <div class="info">
+            <p class="car-name">Nissan Sport 370z</p>
+            <div class="bar bar1"></div>
+            <button
+              class="purchase btn"
+              data-name="Nissan Sport 370z"
+              data-price="34615"
+              data-details="The Nissan Sport 370z gains an eight-speaker stereo, a front splitter, a rear spoiler, a limited-slip differential, larger brakes, and 19-inch wheels. The 370Z offers fine performance compared with today's sports sedans and it dynamically outclasses its sports car rivals"
+              data-img-src="img/nissan.webp"
+            >
+              Order Now - 4 left
+            </button>
+          </div>
+        </div>
+
+        <div class="trend" id="trend2">
+          <div class="img-container">
+            <img src="img/audi4.webp" alt="" />
+          </div>
+          <div class="info">
+            <p class="car-name">Audi A4 Quattro</p>
+            <div class="bar bar2"></div>
+            <button
+              class="purchase btn"
+              data-name="Audi A4 Quattro"
+              data-price="36500"
+              data-details="Its turbocharged four-cylinder engines move it with authority and are fuel efficient. Its standard all-wheel drive and taut suspension tuning offer balanced handling and helpful bad-weather grip. The interior is carefully assembled with premium materials and an attention to detail"
+              data-img-src="img/audi4.webp"
+            >
+              Order Now - 1 left
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cars">
+      <div class="car-header">
+        <h2 class="title">Available Car Model</h2>
+        <p class="info">Sponsored by <span>Our Partners</span></p>
+      </div>
+      <div class="car-brand-cards">
+        <div class="car-brand" data-brand="benz">
+          <div class="img">
+            <img src="img/card/benz-card.webp" alt="" />
+          </div>
+          <div class="car-brand-info">
+            <p class="car-name">Benz</p>
+            <p class="car-ceo">Ola Källenius</p>
+          </div>
+        </div>
+
+        <div class="car-brand" data-brand="ford">
+          <div class="img">
+            <img src="img/card/ford-mustang-card.webp" alt="" />
+          </div>
+          <div class="car-brand-info">
+            <p class="car-name">Ford</p>
+            <p class="car-ceo">Jim Farley</p>
+          </div>
+        </div>
+
+        <div class="car-brand" data-brand="audi">
+          <div class="img">
+            <img src="img/card/audi-card.webp" alt="" />
+          </div>
+          <div class="car-brand-info">
+            <p class="car-name">Audi</p>
+            <p class="car-ceo">Markus Duesmann</p>
+          </div>
+        </div>
+
+        <div class="car-brand" data-brand="porsche">
+          <div class="img">
+            <img src="img/card/porsche-card.webp" alt="" />
+          </div>
+          <div class="car-brand-info">
+            <p class="car-name">Porsche</p>
+            <p class="car-ceo">Oliver Blume</p>
+          </div>
+        </div>
+
+        <div class="car-brand" data-brand="bmw">
+          <div class="img">
+            <img src="img/card/bmw-card.webp" alt="" />
+          </div>
+          <div class="car-brand-info">
+            <p class="car-name">BMW</p>
+            <p class="car-ceo">Oliver Zipse</p>
+          </div>
+        </div>
+
+        <div class="car-brand" data-brand="ferrari">
+          <div class="img">
+            <img src="img/card/Ferrari-card.webp" alt="" />
+          </div>
+          <div class="car-brand-info">
+            <p class="car-name">Ferrari</p>
+            <p class="car-ceo">Benedetto Vigna</p>
+          </div>
+        </div>
+
+        <div class="car-brand" data-brand="nissan">
+          <div class="img">
+            <img src="img/card/nissan-card.webp" alt="" />
+          </div>
+          <div class="car-brand-info">
+            <p class="car-name">Nissan</p>
+            <p class="car-ceo">Makoto Uchida</p>
+          </div>
+        </div>
+
+        <div class="car-brand" data-brand="tesla">
+          <div class="img">
+            <img src="img/card/tesla-card.webp" alt="" />
+          </div>
+          <div class="car-brand-info">
+            <p class="car-name">Tesla</p>
+            <p class="car-ceo">Elon Musk</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="toy-cars">
+      <div class="container">
+        <div class="toy">
+          <picture>
+            <source srcset="img/toy/H-beetle.webp" media="(max-width: 700px)" />
+            <img src="img/toy/beetle.webp" alt="" />
+          </picture>
+
+          <div class="toy-info">
+            <h3 class="name info">Toy Volkswagen</h3>
+            <button
+              class="purchase btn info"
+              data-name="Toy Volkswagen"
+              data-price="240"
+              data-details="Basically Volkswagen beetle little kid, Typical design features of the Beetle and the New Beetle such as the round headlights, exposed wings and the shape of the bonnet and door sills, were of course retained."
+              data-img-src="img/toy/beetle.webp"
+            >
+              Purchase
+            </button>
+          </div>
+        </div>
+        <div class="toy">
+          <picture>
+            <source
+              srcset="img/toy/H-ferrari.webp"
+              media="(max-width: 700px)"
+            />
+            <img src="img/toy/ferrari.webp" alt="" />
+          </picture>
+          <div class="toy-info">
+            <h3 class="name info">Toy Ferrari</h3>
+            <button
+              class="purchase btn info"
+              data-name="Toy Ferrari"
+              data-price="280"
+              data-details="This is the Bburago Ferrari F12 TDF, Red 26021R; car with hard shell and very shock-resistant; model made even more similar to real thanks to well-defined details"
+              data-img-src="img/toy/ferrari.webp"
+            >
+              Purchase
+            </button>
+          </div>
+        </div>
+        <div class="toy">
+          <picture>
+            <source srcset="img/toy/H-jeep.webp" media="(max-width: 700px)" />
+            <img src="img/toy/jeep.webp" alt="" />
+          </picture>
+          <div class="toy-info">
+            <h3 class="name info">Toy Jeep</h3>
+            <button
+              class="purchase btn info"
+              data-name="Toy Jeep"
+              data-price="275"
+              data-details="High quality - as the whole range of world branded toys quality and attention to detail is at the highest level; car with hard shell and very shock-resistant; model made even more similar to real thanks to well-defined details"
+              data-img-src="img/toy/jeep.webp"
+            >
+              Purchase
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="engineers">
+      <h2 class="topic">Our Engineers</h2>
+      <div class="outer-card">
+        <div class="card">
+          <img src="img/people/ceo1.webp" alt="" />
+        </div>
+        <div class="card">
+          <img src="img/people/sec11.webp" alt="" />
+        </div>
+        <div class="card">
+          <img src="img/people/engineer41.webp" alt="" />
+        </div>
+        <div class="card">
+          <img src="img/people/sec01.webp" alt="" />
+        </div>
+        <div class="card">
+          <img src="img/people/engineer11.webp" alt="" />
+        </div>
+        <div class="card">
+          <img src="img/people/engineer21.webp" alt="" />
+        </div>
+        <div class="card">
+          <img src="img/people/engineer31.webp" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31708.319467701185!2d3.349328324944407!3d6.579593728664497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b926e4ad3b7f1%3A0xb1adc03099163dca!2sMaryland%20101233%2C%20Lagos!5e0!3m2!1sen!2sng!4v1661504712479!5m2!1sen!2sng"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        class="map"
+      ></iframe>
+    </section>
+
+    <div class="modals">
+      <div class="outer-modal">
+        <div class="modal car-modal tesla-modal" id="tesla">
+          <i class="fa-solid fa-xmark exit"></i>
+          <div class="tesla car">
+            <img src="img/tesla4.webp" alt="" />
+            <div class="info">
+              <p class="car-name">Tesla Model 3</p>
+              <button
+                class="purchase btn"
+                data-name="Tesla Model 3"
+                data-price="47550"
+                data-details="The inside of Model 3 is unlike any other car. You can use your smartphone as a key, and access all driver controls in the central 15-inch touchscreen. The all-glass roof extends from front to back, creating a sense of openness from every seat."
+                data-img-src="img/tesla4.webp"
+              >
+                Purchase
+              </button>
+            </div>
+          </div>
+          <div class="tesla car">
+            <img src="img/tesla2.webp" alt="" />
+            <div class="info">
+              <p class="car-name">Tesla Model Y</p>
+              <button
+                class="purchase btn"
+                data-name="Tesla Model Y"
+                data-price="64000"
+                data-details="Model Y provides maximum versatility—able to carry 7 passengers and their cargo. Model Y is capable in rain, snow, mud and off-road. Model Y is fully electric, so you never need to visit a gas station again. If you charge overnight at home, you can wake up to a full battery every morning."
+                data-img-src="img/tesla2.webp"
+              >
+                Purchase
+              </button>
+            </div>
+          </div>
+          <div class="tesla car">
+            <img src="img/tesla1.webp" alt="" />
+            <div class="info">
+              <p class="car-name">Tesla Model Y</p>
+              <button
+                class="purchase btn"
+                data-name="Tesla Model Y"
+                data-price="64000"
+                data-details="Model Y provides maximum versatility—able to carry 7 passengers and their cargo. Model Y is capable in rain, snow, mud and off-road. Model Y is fully electric, so you never need to visit a gas station again. If you charge overnight at home, you can wake up to a full battery every morning."
+                data-img-src="img/tesla1.webp"
+              >
+                Purchase
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal car-modal benz-modal" id="benz">
+          <i class="fa-solid fa-xmark exit"></i>
+          <div class="benz car">
+            <img src="img/benz4.webp" alt="" />
+            <div class="info">
+              <p class="car-name">Mercedes Benz GLE 2020</p>
+              <button
+                class="purchase btn"
+                data-name="Mercedes Benz GLE 2020"
+                data-price="54000"
+                data-details="The 2020 Mercedes-Benz GLE-class marries a luxurious cabin and a potent powertrain in a ruggedly handsome package. Benz's popular mid-size SUV has been completely redesigned for 2020 and features a more modern lineup of engines, additional luxury options, and more contemporary technology features."
+                data-img-src="img/benz4.webp"
+              >
+                Purchase
+              </button>
+            </div>
+          </div>
+          <div class="benz car">
+            <img src="img/benz-card.webp" alt="" />
+            <div class="info">
+              <p class="car-name">Mercedes Benz c300</p>
+              <button
+                class="purchase btn"
+                data-name="Mercedes Benz c300"
+                data-price="45200"
+                data-details="Mercedes Benz C300 has earned a prominent position as one of the most prestigious luxurious cars. This particular model is specially designed for those looking to commute comfortably and confidently on a daily basis without any compromise. The car has a powerful engine of six cylinders, which is economical."
+                data-img-src="img/benz-card.webp"
+              >
+                Purchase
+              </button>
+            </div>
+          </div>
+          <div class="benz car">
+            <img src="img/benz2.webp" alt="" />
+            <div class="info">
+              <p class="car-name">Mercedes Benz Amg GT</p>
+              <button
+                class="purchase btn"
+                data-name="Mercedes Benz Amg GT"
+                data-price="91500"
+                data-details="With an unmatched motorsports pedigree behind it, the racers at Mercedes-AMG developed the GT to be a pure sports car with an ideal sense of balance. From its proportions to its sound, every element reveals its purpose, and its passion. A Mercedes-AMG engine starts with the state of the art. "
+                data-img-src="img/benz2.webp"
+              >
+                Purchase
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal car-modal bmw-modal" id="bmw">
+          <i class="fa-solid fa-xmark exit"></i>
+          <div class="bmw car">
+            <img src="img/bmw3.webp" alt="" />
+            <div class="info">
+              <p class="car-name">BMW M5</p>
+              <button
+                class="purchase btn"
+                data-name="BMW M5"
+                data-price="98050"
+                data-details="The M5 is mighty, boasting 600 horsepower from its twin-turbo 4.4-liter V-8 in base form. Under the hood lives a spectacular 600-hp twin-turbo V-8 bolted to an eight-speed automatic transmission that powers all four wheels."
+                data-img-src="img/bmw3.webp"
+              >
+                Purchase
+              </button>
+            </div>
+          </div>
+          <div class="bmw car">
+            <img src="img/bmw-card.webp" alt="" />
+            <div class="info">
+              <p class="car-name">BMW Series-1 Coupe</p>
+              <button
+                class="purchase btn"
+                data-name="BMW Series-1 Coupe"
+                data-price="42990"
+                data-details="The BMW 1 Series always held serious potential as a driver's car, being small, rear-wheel drive and having access to BMW's impressive range of powerplants. The high quality materials and solid construction always impress and it's this general classiness that makes it all feel special rather than any stand-out detailing."
+                data-img-src="img/bmw-card.webp"
+              >
+                Purchase
+              </button>
+            </div>
+          </div>
+          <div class="bmw car">
+            <img src="img/bmw1.webp" alt="" />
+            <div class="info">
+              <p class="car-name">BMW M4-F82</p>
+              <button
+                class="purchase btn"
+                data-name="BMW M4-F82"
+                data-price="60985"
+                data-details="Equipped with Competition Package, the M4 power increases by 20bhp to 444bhp. This engine is among the very best performance car turbo engines currently on the market. It boasts sharp throttle response and a willing top end."
+                data-img-src="img/bmw1.webp"
+              >
+                Purchase
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal car-modal nissan-modal" id="nissan">
+          <i class="fa-solid fa-xmark exit"></i>
+          <div class="nissan car">
+            <img src="img/nissan.webp" alt="" />
+            <div class="info">
+              <p class="car-name">Nissan Sport 370z</p>
+              <button
+                class="purchase btn"
+                data-name="Nissan Sport 370z"
+                data-price="34615"
+                data-details="The Nissan Sport 370z gains an eight-speaker stereo, a front splitter, a rear spoiler, a limited-slip differential, larger brakes, and 19-inch wheels. The 370Z offers fine performance compared with today's sports sedans and it dynamically outclasses its sports car rivals"
+                data-img-src="img/nissan.webp"
+              >
+                Purchase
+              </button>
+            </div>
+          </div>
+          <div class="nissan car">
+            <img src="img/nissan1.webp" alt="" />
+            <div class="info">
+              <p class="car-name">Nissan Maxima 2022</p>
+              <button
+                class="purchase btn"
+                data-name="Nissan Maxima 2022"
+                data-price="45900"
+                data-details="This is not just the 4-Door Sports Car, its a high-tech powerhouse full of excitement. Change from a premium ride to canyon carver at the touch of a button. Feel more confident, thanks to available advanced driver assist technologies, and for seamless connectivity, just plug in your compatible smartphone.All so you can focus on a thrilling drive."
+                data-img-src="img/nissan1.webp"
+              >
+                Purchase
+              </button>
+            </div>
+          </div>
+          <div class="nissan car">
+            <img src="img/nissan-card.webp" alt="" />
+            <div class="info">
+              <p class="car-name">Nissan GTR R35</p>
+              <button
+                class="purchase btn"
+                data-name="Nissan GTR R35"
+                data-price="78000"
+                data-details="The Nissan GT-R is a powerful and tenacious-handling sports car that earns its nickname of Godzilla. The GT-R's quick steering, rigid structure, and adjustable suspension can make even amateurs feel positively heroic from behind the wheel."
+                data-img-src="img/nissan-card.webp"
+              >
+                Purchase
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal car-modal porsche-modal" id="porsche">
+          <i class="fa-solid fa-xmark exit"></i>
+          <div class="porsche car">
+            <img src="img/porsche1.webp" alt="" />
+            <div class="info">
+              <p class="car-name">Porsche 911 Carrera</p>
+              <button
+                class="purchase btn"
+                data-name="Porsche 911 Carrera"
+                data-price="99800"
+                data-details="Powerful yet surprisingly economical engines, Impeccable handling inspires driver confidence. Premium interior and wide range of customization potential, Comfortable and practical for daily driving"
+                data-img-src="img/porsche1.webp"
+              >
+                Purchase
+              </button>
+            </div>
+          </div>
+          <div class="porsche car">
+            <img src="img/Porsche3.webp" alt="" />
+            <div class="info">
+              <p class="car-name">Porsche 911 GT3</p>
+              <button
+                class="purchase btn"
+                data-name="Porsche 911 GT3"
+                data-price="150000"
+                data-details="The 911 GT3 with Touring Package also sets the performance tone, but with focus primarily on the road. Thanks to ingenious aerodynamics, cornering remains impressive, even without a large rear wing. It will not be instantly recognisable to everyone on the road. But that is precisely what increases its puristic appeal. And the experience of driving it."
+                data-img-src="img/Porsche3.webp"
+              >
+                Purchase
+              </button>
+            </div>
+          </div>
+          <div class="porsche car">
+            <img src="img/porsche-card.webp" alt="" />
+            <div class="info">
+              <p class="car-name">Porsche 718 Cayman</p>
+              <button
+                class="purchase btn"
+                data-name="Porsche 718 Cayman"
+                data-price="59500"
+                data-details="The 718 models were made for the sport of it. They are mid-engined roadsters that unite the sporting spirit of the legendary Porsche 718 with the sports car of tomorrow and transfer it to the roads of today world. With one goal: to take the everyday out of every day."
+                data-img-src="img/porsche-card.webp"
+              >
+                Purchase
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal car-modal ferrari-modal" id="ferrari">
+          <i class="fa-solid fa-xmark exit"></i>
+          <div class="ferrari car">
+            <img src="img/Ferrari-card.webp" alt="" />
+            <div class="info">
+              <p class="car-name">Ferrari 458 Italia</p>
+              <button
+                class="purchase btn"
+                data-name="Ferrari 458 Italia"
+                data-price="239000"
+                data-details="The Ferrari seven-speed dual-clutch gearbox shifts in the blink of an eye, while the standard ceramic brakes deliver massive stopping power. Top it off with searing performance, hugely engaging handling and some old-school Ferrari magic, and the 458 is simply sensational."
+                data-img-src="img/Ferrari-card.webp"
+              >
+                Purchase
+              </button>
+            </div>
+          </div>
+          <div class="ferrari car">
+            <img src="img/Ferrari3.webp" alt="" />
+            <div class="info">
+              <p class="car-name">Ferrari 458 Italia</p>
+              <button
+                class="purchase btn"
+                data-name="Ferrari 458 Italia"
+                data-price="239000"
+                data-details="The Ferrari seven-speed dual-clutch gearbox shifts in the blink of an eye, while the standard ceramic brakes deliver massive stopping power. Top it off with searing performance, hugely engaging handling and some old-school Ferrari magic, and the 458 is simply sensational."
+                data-img-src="img/Ferrari3.webp"
+              >
+                Purchase
+              </button>
+            </div>
+          </div>
+          <div class="ferrari car">
+            <img src="img/Ferrari2.webp" alt="" />
+            <div class="info">
+              <p class="car-name">Ferrari F8 Tributo</p>
+              <button
+                class="purchase btn"
+                data-name="Ferrari 458 Italia"
+                data-price="272090"
+                data-details="The F8 Tributo is powered by a twin-turbocharged 3.9-liter V-8 that produces 710 horsepower and 568 pound-feet of torque. All models are rear-wheel drive, and a seven-speed automatic transmission changes the gears. This Ferrari is quick enough to make an indelible impression."
+                data-img-src="img/Ferrari2.webp"
+              >
+                Purchase
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal car-modal audi-modal" id="audi">
+          <i class="fa-solid fa-xmark exit"></i>
+          <div class="audi car">
+            <img src="img/audi4.webp" alt="" />
+            <div class="info">
+              <p class="car-name">Audi A4 Quattro</p>
+              <button
+                class="purchase btn"
+                data-name="Audi A4 Quattro"
+                data-price="36500"
+                data-details="Its turbocharged four-cylinder engines move it with authority and are fuel efficient. Its standard all-wheel drive and taut suspension tuning offer balanced handling and helpful bad-weather grip. The interior is carefully assembled with premium materials and an attention to detail"
+                data-img-src="img/audi4.webp"
+              >
+                Purchase
+              </button>
+            </div>
+          </div>
+          <div class="audi car">
+            <img src="img/audi5.webp" alt="" />
+            <div class="info">
+              <p class="car-name">Audi A6 2021</p>
+              <button
+                class="purchase btn"
+                data-name="Audi A6 2021"
+                data-price="50800"
+                data-details="The A6's interior design is sleek, modern, and nicely put together from excellent-quality materials.The A6's two powertrains—a 261-hp turbocharged 2.0-liter four-cylinder and a 335-hp turbocharged 3.0-liter V-6—are both more than enough to haul this mid-size sedan around town without undue strain."
+                data-img-src="img/audi5.webp"
+              >
+                Purchase
+              </button>
+            </div>
+          </div>
+          <div class="audi car">
+            <img src="img/audi6.webp" alt="" />
+            <div class="info">
+              <p class="car-name">Audi RS7 SE</p>
+              <button
+                class="purchase btn"
+                data-name="Audi RS7 SE"
+                data-price="118400"
+                data-details="The Audi RS7 is a largemouth high-performance hatchback sedan with swollen fenders and a spacious interior thats chock full of the luxuries and high-tech gear. The RS7 is supremely comfortable and even extra-practical thanks to its hatchback body style."
+                data-img-src="img/audi6.webp"
+              >
+                Purchase
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal car-modal ford-modal" id="ford">
+          <i class="fa-solid fa-xmark exit"></i>
+          <div class="ford car">
+            <img src="img/ford-mustang-card.webp" alt="" />
+            <div class="info">
+              <p class="car-name">Ford Mustang 2020</p>
+              <button
+                class="purchase btn"
+                data-name="Ford Mustang 2020"
+                data-price="49930"
+                data-details="The interior is comfortable and well-trimmed, cargo space is plentiful, and the available touch-screen infotainment system is easy to use. Good safety and predicted reliability are the icing on the cake."
+                data-img-src="img/ford-mustang-card.webp"
+              >
+                Purchase
+              </button>
+            </div>
+          </div>
+          <div class="ford car">
+            <img src="img/ford2.webp" alt="" />
+            <div class="info">
+              <p class="car-name">Ford F-150 Raptor</p>
+              <button
+                class="purchase btn"
+                data-name="Ford F-150 Raptor"
+                data-price="49930"
+                data-details="This ride wears extra-wide fenders, long-travel suspension, big tires, and the high-performance demeanor of a Baja-bashing race truck. That long-travel suspension, which is specifically designed to absorb the bumps, dips, and jumps of high-speed off-roading"
+                data-img-src="img/ford2.webp"
+              >
+                Purchase
+              </button>
+            </div>
+          </div>
+          <div class="ford car">
+            <img src="img/fordmustang.webp" alt="" />
+            <div class="info">
+              <p class="car-name">Ford GT 5.0</p>
+              <button
+                class="purchase btn"
+                data-name="Ford GT 5.0"
+                data-price="71500"
+                data-details="The sensational Ford Mustang is here. Loaded with innovative technology and delivering world-class levels of performance and style, the Mustang is more than just a sports car. It's the heart and soul of Ford."
+                data-img-src="img/fordmustang.webp"
+              >
+                Purchase
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal purchase-modal" id="purchase-modal">
+          <div class="container">
+            <div class="item-img">
+              <img src="img/tesla2.webp" alt="" id="item-img" />
+            </div>
+            <div class="name-price">
+              <p class="name">Tesla Model Y</p>
+              <p class="price">$2,999</p>
+            </div>
+            <p class="details">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Accusamus, quo. Quas sunt quia possimus sapiente. Eligendi
+              inventore soluta sapiente odio?
+            </p>
+            <div class="btns">
+              <button class="exit btn">Discard</button>
+              <button class="btn order" id="addToCart">Add To Garage</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal reviews-modal">
+          <i class="fa-solid fa-xmark exit"></i>
+          <h3 class="title">Reviews</h3>
+          <div class="reviews">
+            <div class="review">
+              <p class="content">
+                I was a little skeptical of the Tesla and the entire electric
+                thing and wondering what all the hype was all about! I only say:
+                "Tesla is NOT overrated!"...Phenomenal driving experience and
+                unbelievable technology! I'm a believer!!!
+              </p>
+              <p class="name">~ Bo P'an ~</p>
+            </div>
+            <div class="review">
+              <p class="content">
+                Just picked up a 2022 nissan S base model and let me tell you
+                how impressed I am, it's smooth, peppy/zippy and fun to drive
+                and 40+ MPG observed right away!! Super impressed with this car!
+                Thank you NISSAN for making such a great car at a great price!!
+              </p>
+              <p class="name">~ Michael Anderson ~</p>
+            </div>
+            <div class="review">
+              <p class="content">
+                I have a 2022 GT4 that's ghost white with all upgrades. It is a
+                beast in white clothing…it's sound is gruff, it's look is
+                serene, it's speed is magic
+              </p>
+              <p class="name">~ Kevin Williams ~</p>
+            </div>
+            <div class="review">
+              <p class="content">
+                I bought the Carerra S just to get the manual. Supply is very
+                tight so order now and prepare to wait. I only waited 5 months
+                for mine. If you've wanted one, go for it.
+              </p>
+              <p class="name">~ Johnah Sully ~</p>
+            </div>
+            <div class="review">
+              <p class="content">
+                Love the drive and the plush interior. My last 4 cars from
+                oldest to most recent were BMW, and then 3 consecutive Audis and
+                I have to say, this truck is a pleasure to drive. Definitely
+                different from the German engineering and tight suspension but a
+                delight to drive.
+              </p>
+              <p class="name">~ Rasmus Nielsen ~</p>
+            </div>
+            <div class="review">
+              <p class="content">
+                I love driving the car. It's fast, responsive, and stable on the
+                road. The front seat is comfortable for me; climate system,
+                navigation (with some glitches) all pretty good. I love the
+                glass roof and simplicity of design.
+              </p>
+              <p class="name">~ Maurilio Manna ~</p>
+            </div>
+            <div class="review">
+              <p class="content">
+                Before buying my Atlas, I read every review and watched every
+                YouTube video I could find almost to the point of obsession. I
+                had a Ford expedition max previously with far too many problems
+                with the EcoBoost engine. The common theme for the Atlas was
+                that the engine was too sluggish. In my opinion, the engine is
+                perfectly adequate (have V6) and will perform everything you
+                need it too
+              </p>
+              <p class="name">~ Bill Rain ~</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal faq-modal">
+          <i class="fa-solid fa-xmark exit"></i>
+          <h2 class="title">Questions? Look Here.</h2>
+          <div class="faqs">
+            <div class="faq">
+              <div class="question">
+                <h4 class="text">What's The Build Time For This Website?</h4>
+                <i class="fa-solid fa-plus show"></i>
+              </div>
+              <p class="answer">
+                I'd say it took me close to two weeks plus due to an insane
+                amount of procastinating and the fact I really tried to make the
+                website really simple even though i'm not sure anymore
+              </p>
+            </div>
+
+            <div class="faq">
+              <div class="question">
+                <h4 class="text">What Is This Website Built On?</h4>
+                <i class="fa-solid fa-plus show"></i>
+              </div>
+              <p class="answer">
+                Pure HTML, CSS and Javascript... No Framework / library
+              </p>
+            </div>
+
+            <div class="faq">
+              <div class="question">
+                <h4 class="text">What Inspired This Website?</h4>
+                <i class="fa-solid fa-plus show"></i>
+              </div>
+
+              <p class="answer">
+                First, the tesla cars official website(super astonishing by the
+                way). Second, everyone was building fashion related websites..so
+                i thought why not try something else
+              </p>
+            </div>
+
+            <div class="faq">
+              <div class="question">
+                <h4 class="text">Is This Website Optimized Properly?</h4>
+                <i class="fa-solid fa-plus show"></i>
+              </div>
+
+              <p class="answer">
+                I'd say not entirely, don't get me wrong! I tried....The whole
+                website size was a whooping 128mb(can you imagine??) due to the
+                high quality images, For Dispay - It is amazing; but for
+                performance, that is too bad...In a nutshell, I had to optimize
+                the website size to 5.8mb(which is still large) but it did boost
+                performance
+              </p>
+            </div>
+
+            <div class="faq">
+              <div class="question">
+                <h4 class="text">Why Use Modals Instead Of Multiple Pages?</h4>
+                <i class="fa-solid fa-plus show"></i>
+              </div>
+
+              <p class="answer">
+                This is more like a trial stuff and it actually turned out
+                amazing, it's just that far down the road i noticed mobile users
+                won't be able to use the back button to navigate the site(it's a
+                one page site) instead would have to exit out of each section of
+                the site with the use of the exit icons built in the website.
+                I'm sorry.
+              </p>
+            </div>
+
+            <div class="faq">
+              <div class="question">
+                <h4 class="text">
+                  What Was The Most Difficult Part About This Website?
+                </h4>
+                <i class="fa-solid fa-plus show"></i>
+              </div>
+
+              <p class="answer">
+                There's a lot man...Choosing a font was hell, choosing the
+                colors for the website dark mode was frustrating, setting up
+                animations, trying to make the site as simple as possible(i know
+                it sounds easy but it acually isn't), finding the right aspect
+                ratio for the site images, thinking about how to make the
+                website not break on other browser(If you use internet explorer,
+                i don't like you), naming variables was exhauting and many more
+              </p>
+            </div>
+
+            <div class="faq">
+              <div class="question">
+                <h4 class="text">Can I Purchase A Car On THis Website?</h4>
+                <i class="fa-solid fa-plus show"></i>
+              </div>
+
+              <p class="answer">Well you can try and find out..</p>
+            </div>
+
+            <div class="faq">
+              <div class="question">
+                <h4 class="text">How Can I Get A Car?</h4>
+                <i class="fa-solid fa-plus show"></i>
+              </div>
+
+              <p class="answer">
+                Have you tried purchasing one?? you can try cars.com
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal search-modal">
+          <i class="fa-solid fa-xmark exit"></i>
+          <h3 class="title">Search Results</h3>
+          <div class="search-bar">
+            <input type="text" id="search-bar" placeholder="..." />
+            <input type="submit" class="search-btn" value="search" />
+          </div>
+
+          <p class="search-word">Results for '<span>Lexus</span>'</p>
+
+          <div class="searches"></div>
+        </div>
+
+        <div class="modal cart-modal">
+          <i class="fa-solid fa-xmark exit"></i>
+          <h3 class="title">Your Garage <span>Forthcoming Cars</span></h3>
+
+          <div class="cart-items">
+            <div class="item">
+              <div class="container">
+                <div class="img">
+                  <img src="img/tesla2.webp" alt="" />
+                </div>
+                <div class="info">
+                  <p class="name">Tesla Model 3</p>
+                  <p class="color">White</p>
+                  <p class="price">$47750</p>
+                </div>
+              </div>
+              <i class="fa-solid fa-minus remove"></i>
+            </div>
+
+            <div class="item">
+              <div class="container">
+                <div class="img">
+                  <img src="img/ford-mustang-card.webp" alt="" />
+                </div>
+                <div class="info">
+                  <p class="name">Ford Mustang 2020</p>
+                  <p class="color">White</p>
+                  <p class="price">$70500</p>
+                </div>
+              </div>
+              <i class="fa-solid fa-minus remove"></i>
+            </div>
+
+            <div class="item">
+              <div class="container">
+                <div class="img">
+                  <img src="img/Ferrari2.webp" alt="" />
+                </div>
+                <div class="info">
+                  <p class="name">Porsche 911 GT3</p>
+                  <p class="color">Black</p>
+                  <p class="price">$114800</p>
+                </div>
+              </div>
+              <i class="fa-solid fa-minus remove"></i>
+            </div>
+
+            <form class="discount-input">
+              <input
+                type="text"
+                placeholder="Enter discount code"
+                id="inputDiscount"
+              />
+              <input
+                type="submit"
+                class="apply"
+                id="apply"
+                value="Apply Discount"
+              />
+            </form>
+
+            <div class="order-summary">
+              <div class="discount">
+                <p class="name">Discount:</p>
+                <p class="name">$<span id="discount">0</span></p>
+              </div>
+              <div class="delivery">
+                <p class="name">Delivery:</p>
+                <p class="name">$<span id="delivery">0</span></p>
+              </div>
+              <div class="subtotal">
+                <p class="name">Subtotal:</p>
+                <p class="name">$<span id="subtotal">233050</span></p>
+              </div>
+              <div class="total">
+                <p class="name">Total:</p>
+                <p class="name">$<span id="total">238050</span></p>
+              </div>
+            </div>
+
+            <div class="checkout">
+              <button id="checkout">Checkout</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal access-modal">
+          <i class="fa-solid fa-xmark exit"></i>
+          <div class="container">
+            <div class="switch">
+              <p class="logIn-signUp signUp-nav signUp-tab">Sign Up</p>
+              <p class="logIn-signUp logIn-nav logIn-tab">Log In</p>
+            </div>
+
+            <form action="" class="signup" id="signUp">
+              <label for="regName">Username</label>
+              <input type="text" id="regName" required />
+              <label for="regEmail">Email</label>
+              <input type="email" id="regEmail" required />
+              <label for="regPass">Password</label>
+              <input type="password" id="regPass" required />
+              <input type="submit" value="Proceed" />
+            </form>
+            <form action="" class="login" id="logIn">
+              <label for="loginEmail">Email</label>
+              <input type="email" id="loginEmail" required />
+
+              <label for="loginPass">Password</label>
+              <input type="password" id="loginPass" required />
+              <input type="submit" value="Proceed" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="notif-panel">
+      <p class="notification">Product added to Garage.</p>
+    </div>
+
+    <div class="loading">
+      <i class="fa-solid fa-cog fa-spin"></i>
+    </div>
+
+    <footer>
+      <p>CARLET &copy; <span class="yr">2022</span></p>
+    </footer>
+  </body>
+</html>
